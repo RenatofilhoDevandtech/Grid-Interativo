@@ -17,7 +17,9 @@ O CSS Grid é uma ferramenta poderosa para criar layouts organizados e flexívei
 ## **2. O Básico do Grid**
 
 ### **Propriedade-chave:** `display: grid;`
-
+ *display: grid;*  
+   - *O que faz?* Transforma um elemento em um container de grade.  
+   - *Para que serve?* Permite organizar elementos dentro dele em linhas e colunas.
 Transforma um elemento em um **container grid**, que pode conter itens organizados em linhas e colunas.
 
 **Exemplo:**
@@ -32,6 +34,16 @@ Transforma um elemento em um **container grid**, que pode conter itens organizad
 Propriedades: grid-template-columns e grid-template-rows
 Define o número e o tamanho das colunas e linhas do grid.
 
+
+*grid-template-columns*  
+   - *O que faz?* Define o número de colunas e seus tamanhos.  
+   - *Para que serve?* Organiza os elementos em colunas específicas.
+
+      *grid-template-rows*  
+   - *O que faz?* Define o número de linhas e seus tamanhos.  
+   - *Para que serve?* Organiza os elementos em diferentes alturas.  
+   - *Exemplo:*  
+     css
 Exemplo:
 
 ```css
@@ -46,7 +58,9 @@ Dica: Use valores como auto, px, % ou fr para criar layouts flexíveis.
 ## 4. Espaçamento Elegante
 Propriedade: gap
 Define o espaçamento entre linhas e colunas do grid.
-
+ *gap*  
+   - *O que faz?* Define o espaço entre as colunas e linhas.  
+   - *Para que serve?* Ajuda a manter os elementos organizados com espaços entre eles.  
 Exemplo:
 
 ```css
@@ -63,6 +77,11 @@ Exemplo visual: Imagine um tabuleiro de xadrez com espaços bem definidos entre 
 Propriedades: grid-column e grid-row
 Permite posicionar itens no grid, especificando onde eles começam e terminam.
 
+*grid-column e grid-row*
+
+*O que faz?* Define em qual coluna ou linha um elemento deve aparecer.  
+- *Para que serve?* Ajuda a posicionar os elementos dentro da grade.
+  
 Exemplo:
 
 ```css
@@ -99,6 +118,10 @@ Dica: Ideal para criar layouts organizados, como cabeçalhos, menus e rodapés.
 Propriedades: justify-items e align-items
 Controla o alinhamento dos itens dentro de suas células no grid.
 
+*justify-content e align-items*  
+   - *O que faz?* Define o alinhamento dos itens dentro do grid.  
+   - *Para que serve?* Ajusta a posição dos elementos na horizontal e na vertical.  
+   - *Exemplo:*  
 Exemplo:
 
 ```css
