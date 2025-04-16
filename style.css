@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garantir que padding e border sejam incluídos no tamanho total */
+  }
+  
+  body {
+    font-family: Arial, sans-serif; /* Fonte legível */
+    background: linear-gradient(120deg, #1a1a2e, #16213e, #0f3460); /* Fundo futurístico com gradiente */
+    color: #fff; /* Texto branco para contraste */
+    line-height: 1.6; /* Espaçamento confortável entre linhas */
+  }
+  
+  header {
+    text-align: center; /* Centraliza o conteúdo do cabeçalho */
+    padding: 20px; /* Espaço interno */
+    background: #0f3460; /* Cor de fundo do cabeçalho */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
+  }
+  
+  h1 {
+    font-size: 2.2rem; /* Tamanho do título principal */
+  }
+  
+  main {
+    padding: 20px; /* Espaçamento interno para o conteúdo principal */
+  }
+  
+  section {
+    margin: 20px 0; /* Espaçamento vertical entre seções */
+  }
+  
+  /* 2. O Básico do Grid */
+  .grid-basic {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+  
+  .basic-item {
+    background: linear-gradient(135deg, #00f260, #0575e6); /* Gradiente para destaque */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+  }
+  
+  /* 3. Criando Linhas e Colunas */
+  .grid-rows-columns {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: 100px 200px auto; /* Define colunas com diferentes tamanhos */
+    grid-template-rows: 50px 50px; /* Define duas linhas de altura fixa */
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+  
+  .item {
+    background: linear-gradient(135deg, #ff7eb3, #ffc93c); /* Gradiente vibrante para destaque */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px; /* Espaço interno */
+    border-radius: 5px; /* Bordas arredondadas */
+  }
+  
+  /* 4. Espaçamento (gap) */
+  .grid-gap {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: 1fr 1fr; /* Duas colunas iguais */
+    gap: 20px; /* Espaçamento maior entre os itens */
+  }
+  
+  .item {
+    background: linear-gradient(135deg, #00dbde, #fc00ff); /* Gradiente futurístico */
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* 5. Posicionando Itens */
+  .grid-position {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    grid-template-rows: 100px 100px; /* Define duas linhas iguais de 100px */
+    gap: 10px; /* Espaçamento entre os itens */
+  }
+  
+  .item1 {
+    grid-column: 1 / 3; /* O item ocupa da coluna 1 até a coluna 3 */
+    grid-row: 1 / 2; /* O item ocupa a primeira linha */
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradiente vibrante para destaque */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
+  .item2 {
+    grid-column: 3 / 4; /* O item ocupa a terceira coluna */
+    grid-row: 1 / 2; /* O item ocupa a primeira linha */
+    background: linear-gradient(135deg, #36d1dc, #5b86e5); /* Gradiente azul futurístico */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
+  .item3 {
+    grid-column: 2 / 3; /* O item ocupa a segunda coluna */
+    grid-row: 2 / 3; /* O item ocupa a segunda linha */
+    background: linear-gradient(135deg, #f7971e, #ffd200); /* Gradiente amarelo vibrante */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaço interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
+  /* 6. Áreas Nomeadas */
+  .grid-areas {
+    display: grid; /* Ativa o Grid */
+    grid-template-areas: 
+      "header header"
+      "menu content"
+      "menu footer"; /* Define áreas nomeadas para os itens */
+    gap: 10px; /* Espaçamento entre áreas */
+  }
+  
+  .header {
+    grid-area: header; /* Define a área do cabeçalho */
+  }
+  
+  .menu {
+    grid-area: menu; /* Define a área do menu */
+  }
+  
+  .content {
+    grid-area: content; /* Define a área do conteúdo principal */
+  }
+  
+  .footer {
+    grid-area: footer; /* Define a área do rodapé */
+  }
+  
+  .header, .menu, .content, .footer {
+    background: linear-gradient(135deg, #34e89e, #0f3443); /* Gradiente estilizado */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px; /* Espaço interno */
+    border-radius: 5px;
+  }
+  
+  /* 7. Alinhamento */
+  .grid-alignment {
+    display: grid; /* Ativa o Grid */
+    justify-items: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 10px;
+  }
+  
+  .align-item {
+    background: linear-gradient(135deg, #ff6f61, #ffb61e); /* Gradiente quente */
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* 8. Controle do Grid */
+  .grid-auto-fill {
+    display: grid; /* Ativa o Grid */
+    grid-template-columns: repeat(auto-fill, 100px); /* Colunas dinâmicas de 100px */
+    gap: 10px; /* Espaçamento entre itens */
+  }
+  
+  .item {
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Gradiente vibrante */
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  /* 9. Linhas e Colunas Automáticas */
+  .grid-auto-rows {
+    display: grid; /* Ativa o Grid */
+    grid-auto-rows: 50px; /* Define altura automática para linhas */
+    grid-auto-columns: 100px; /* Define largura automática para colunas */
+    gap: 10px;
+  }
+  
+  .item {
+    background: linear-gradient(135deg, #0575e6, #021b79); /* Gradiente profundo */
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center; /* Centraliza o texto do rodapé */
+    padding: 20px; /* Espaço interno */
+    background: #0f3460; /* Fundo escuro para contraste */
+    margin-top: 20px;
+  }
+  
